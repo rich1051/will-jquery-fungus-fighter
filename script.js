@@ -4,10 +4,14 @@ $(document).ready(onReady);
 // Feel free to make this to what you want!
 // Example:
 let fungusHP = 100;
-let playerAP = 100
+let playerAP = 100;
 
 function onReady() {
-    $('.attacks').on('click', functionAttack)
+    $('.arcane-scepter').on('click', attackArcane);
+    $('.entangle').on('click', attackEntangle);
+    $('.dragon-blade').on('click', attackDragon);
+    $('.star-fire').on('click', attackStar);
+}
 
     // Make sure you check the index.html file! 
     // There are lots of buttons and things ready for you to hook into here!
@@ -17,20 +21,25 @@ function onReady() {
     // - Handle events that ->
     // - Updates state which is ->
     // - Rendered to the DOM
-}
 
-function functionAttack() {
-    if ($('.attack-btn arcane-scepter')) {
-        console.log('arcane scepter activated!');
-    }
-    else if ($('.attack-btn entangle')) {
-        console.log('entangle activated!');
-    }
-    else if ($('.attack-btn dragon-blade')) {
-        console.log('dragon blade activated!');
-    }
-    else if ($('.attack-btn star-fire')) {
-        console.log('star fire activated!');
+
+function attackArcane(event) {
+    event.preventDefault()
+    console.log('Arcane Scepter activated!');
     }
 
-}
+function attackEntangle(event) {
+    event.preventDefault()
+    console.log('Entangle activated!');
+    }
+
+function attackDragon(event) {
+    event.preventDefault()
+    console.log('Dragon Blade activated!');
+    }
+
+function attackStar(event) {
+    event.preventDefault()
+    console.log('Star Fire activated!');
+    }
+
