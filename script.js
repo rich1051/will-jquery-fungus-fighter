@@ -29,12 +29,15 @@ function attackArcane(event) {
         $('.freaky-fungus').removeClass('walk');
         $('.freaky-fungus').addClass('jump');
         $('.hp-text').text(fungusHP);
+        playerAP = 0
+        $('.ap-text').text(playerAP);
     }
     else if (fungusHP < 14) {
         fungusHP = 0;
         $('.freaky-fungus').removeClass('walk');
         $('.freaky-fungus').addClass('dead');
         $('.hp-text').text(playerAP);
+        $('.hp-text').text(fungusHP);
     }
     else {
         playerAP -= 12;
@@ -51,12 +54,15 @@ function attackEntangle(event) {
         $('.freaky-fungus').removeClass('walk');
         $('.freaky-fungus').addClass('jump');
         $('.hp-text').text(fungusHP);
+        playerAP = 0
+        $('.ap-text').text(playerAP);
     }
     else if (fungusHP <= 9) {
         fungusHP = 0;
         $('.freaky-fungus').removeClass('walk');
         $('.freaky-fungus').addClass('dead');
         $('.hp-text').text(playerAP);
+        $('.hp-text').text(fungusHP);
     }
     else {
         playerAP -= 23;
@@ -73,12 +79,15 @@ function attackDragon(event) {
         $('.freaky-fungus').removeClass('walk');
         $('.freaky-fungus').addClass('jump');
         $('.hp-text').text(fungusHP);
+        playerAP = 0
+        $('.ap-text').text(playerAP);
     }
     else if (fungusHP <= 47) {
         fungusHP = 0;
         $('.freaky-fungus').removeClass('walk');
         $('.freaky-fungus').addClass('dead');
         $('.hp-text').text(playerAP);
+        $('.hp-text').text(fungusHP);
     }
     else {
         playerAP -= 38;
@@ -95,12 +104,15 @@ function attackStar(event) {
         $('.freaky-fungus').removeClass('walk');
         $('.freaky-fungus').addClass('jump');
         $('.hp-text').text(fungusHP);
+        playerAP = 0
+        $('.ap-text').text(playerAP);
     }
     else if (fungusHP <= 25) {
         fungusHP = 0;
         $('.freaky-fungus').removeClass('walk');
         $('.freaky-fungus').addClass('dead');
         $('.hp-text').text(playerAP);
+        $('.hp-text').text(fungusHP);
     }
     else {
         playerAP -= 33;
