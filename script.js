@@ -21,7 +21,9 @@ function onReady() {
     // - Handle events that ->
     // - Updates state which is ->
     // - Rendered to the DOM
-
+// if (playerAP < 12) {
+//     $('arcane-scepter' disabled);
+// }
 
 function attackArcane(event) {
     event.preventDefault()
@@ -36,7 +38,7 @@ function attackArcane(event) {
         fungusHP = 0;
         $('.freaky-fungus').removeClass('walk');
         $('.freaky-fungus').addClass('dead');
-        $('.hp-text').text(playerAP);
+        $('.ap-text').text(playerAP);
         $('.hp-text').text(fungusHP);
     }
     else {
@@ -61,7 +63,7 @@ function attackEntangle(event) {
         fungusHP = 0;
         $('.freaky-fungus').removeClass('walk');
         $('.freaky-fungus').addClass('dead');
-        $('.hp-text').text(playerAP);
+        $('.ap-text').text(playerAP);
         $('.hp-text').text(fungusHP);
     }
     else {
@@ -86,7 +88,7 @@ function attackDragon(event) {
         fungusHP = 0;
         $('.freaky-fungus').removeClass('walk');
         $('.freaky-fungus').addClass('dead');
-        $('.hp-text').text(playerAP);
+        $('.ap-text').text(playerAP);
         $('.hp-text').text(fungusHP);
     }
     else {
