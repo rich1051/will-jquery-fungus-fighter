@@ -11,7 +11,7 @@ function onReady() {
     $('.entangle').on('click', attackEntangle);
     $('.dragon-blade').on('click', attackDragon);
     $('.star-fire').on('click', attackStar);
-}
+};
 
     // Make sure you check the index.html file! 
     // There are lots of buttons and things ready for you to hook into here!
@@ -43,7 +43,7 @@ function attackArcane(event) {
         $('.ap-text').text(playerAP);
     }
     console.log('Arcane Scepter activated!');
-    }
+    };
 
 function attackEntangle(event) {
     event.preventDefault()
@@ -65,7 +65,7 @@ function attackEntangle(event) {
         $('.ap-text').text(playerAP);
     }
     console.log('Entangle activated!');
-    }
+    };
 
 function attackDragon(event) {
     event.preventDefault()
@@ -87,7 +87,7 @@ function attackDragon(event) {
         $('.ap-text').text(playerAP);
     }
     console.log('Dragon Blade activated!');
-    }
+    };
 
 function attackStar(event) {
     event.preventDefault()
@@ -109,5 +109,5 @@ function attackStar(event) {
         $('.ap-text').text(playerAP);
     }
     console.log('Star Fire activated!');
-    }
+    };
 
